@@ -1,0 +1,99 @@
+﻿this.AllowProgressPopup = true;
+
+var _childWindow;
+var _progressMessage;
+var _controlClientID;
+var _noControlClientID;
+var _proceedPostBack = false;
+
+function CloseChildWindow()
+{
+    if(_childWindow != null)
+    {
+        _childWindow.close();
+    }
+}
+
+function PopupProgress()
+{
+    if($find(this.ProgressModalPopupExtenderClientID) != null)
+    {
+        if (this.AllowProgressPopup) {
+            $find(this.ProgressModalPopupExtenderClientID).show();
+        }
+        else {
+            ChangeProgressPopupStatus(true);
+        }
+    }
+}
+
+function HideProgressPopup()
+{
+    $find(this.ProgressModalPopupExtenderClientID).hide();
+}
+
+function PopupAlert(message)
+{
+    $get(this.AlertMessageLabelClientID).innerHTML = message;
+    $find(this.AlertModalPopupExtenderClientID).show();
+}
+
+function OnOKAlert()
+{
+    $find(this.AlertModalPopupExtenderClientID).hide();
+    $get(this.MessageIDLabelClientID).innerHTML = '0';
+    $get(this.LogIDLabelClientID).innerHTML='0';
+    $get(this.MessageSourceLabelClientID).innerHTML='Application';
+}
+
+function PopupConfirm2(yesControlClientID, noControlClientID, confirmMessage, progressMessage)
+{
+    _noControlClientID = noControlClientID;
+    PopupConfirm(yesControlClientID, confirmMessage, progressMessage)
+}
+
+function PopupConfirm(controlClientID, confirmMessage, progressMessage)
+{    
+    if(_proceedPostBack)
+    {
+        _proceedPostBack = false;
+        return true;
+    }
+    else
+    {
+        _controlClientID = controlClientID;
+        _progressMessage = progressMessage;
+        $get(this.ConfirmMessageLabelClientID).innerHTML = confirmMessage;
+        $find(this.ConfirmModalPopupExtenderClientID).show();
+        
+        return false;
+    }
+}
+
+function OnOK()
+{
+    ChangeProgressPopupMessage(_progressMessage);
+    $find(this.ConfirmModalPopupExtenderClientID).hide();
+    _proceedPostBack = true;
+    $get(_controlClientID).click();
+}
+
+function OnCancel()
+{   
+    $find(this.ConfirmModalPopupExtenderClientID).hide();
+
+    if(_noControlClientID != null)
+    {
+        $get(_noControlClientID).click();
+    }
+}
+
+function ChangeProgressPopupMessage(message)
+{
+    $get(this.ProgressMessageLabelClientID).innerHTML = message;
+}
+
+function ChangeProgressPopupStatus(status)
+{
+    this.AllowProgressPopup = status;
+}

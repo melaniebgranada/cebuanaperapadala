@@ -1,0 +1,553 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0055)https://remittancetracker.perapadala.com/LoginPage.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+	Remittance Tracker
+</title><link id="Link1" rel="icon" href="https://remittancetracker.perapadala.com/favicon.ico" type="image/ico"><link href="./Remittance Tracker_files/popupdialog.css" rel="stylesheet" type="text/css"><link href="./Remittance Tracker_files/button.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+@-moz-document url-prefix() { 
+  .login-block2 .input
+  {
+     width: 91%;
+  }
+}
+</style>
+    <script type="text/javascript" src="./Remittance Tracker_files/popupdialog.js.download"></script>
+    <script type="text/javascript">
+        function alphanumeric_only(e) {
+
+            var keycode;
+            if (window.event) keycode = window.event.keyCode;
+            else if (event) keycode = event.keyCode;
+            else if (e) keycode = e.which;
+            else return true; if ((keycode >= 47 && keycode <= 57) || (keycode >= 65 && keycode <= 90) || (keycode >= 97 && keycode <= 122)) {
+                return true;
+            }
+
+            else {
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <script type="text/javascript">
+
+        function PrintDiv() {
+            var h = screen.height;
+            var w = screen.width;
+            var divToPrint = document.getElementsByClassName('Content')[0];
+            var popupWin = window.open('', '_blank', 'width=' + w + ',height=' + h + ',top=0, left=0, fullscreen=yes');
+            popupWin.document.open();
+            popupWin.document.write('<html><head><link href="css/style.css" rel="stylesheet" type="text/css" /></head><body onload="window.print()">' + divToPrint.innerHTML + '</html>');
+
+            popupWin.document.close();
+        }
+
+        $(".login-block :input[type=text]").tooltip({
+
+            // place tooltip on the right edge
+            position: "center right",
+
+            // a little tweaking of the position
+            offset: [-2, 10],
+
+            // use the built-in fadeIn/fadeOut effect
+            effect: "fade",
+
+            // custom opacity setting
+            opacity: 0.7
+
+        });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--for media query-->
+    <meta name="description" content="Remittance Tracker Web app"><link href="./Remittance Tracker_files/bootstrap.min.css" rel="stylesheet" type="text/css"><link href="./Remittance Tracker_files/font-awesome.min.css" rel="stylesheet" type="text/css"><link href="./Remittance Tracker_files/custom.css" rel="stylesheet" type="text/css">
+    <script src="./Remittance Tracker_files/jquery-2.1.1.min.js.download" type="text/javascript"></script>
+    <!-- jQuery & jQueryUI + theme -->
+    <link href="./Remittance Tracker_files/jquery-ui_1.8.css" rel="stylesheet" type="text/css">
+    
+    <!-- for Virtual Keyboard -->
+    <!-- keyboard widget css & script -->
+    <link href="./Remittance Tracker_files/keyboard.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./Remittance Tracker_files/jquery.keyboard.js.download"></script>
+    <!-- keyboard optional extensions -->
+    <script type="text/javascript" src="./Remittance Tracker_files/jquery.keyboard.extension-scramble.js.download"></script>
+    <script type="text/javascript" src="./Remittance Tracker_files/JS_VirtualKeyboard.js.download"></script>
+    <!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="public/lib/fontawesome/css/font-awesome-ie7.min.css" />
+    <![endif]-->
+</head>
+<body>
+    <form method="post" action="https://remittancetracker.perapadala.com/LoginPage.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="71PGsOUlgYFc4U+McVTXfzEVx0ad096k8V95A9jfui0P2iREytat3zdMDJbWsOKcfi2Is+lhxQYOIkLg6V1UMo/5mPQoCrSbx7Tv4h2zohWSKHAR8EI+7GjMurJwJ9Er1r/ku1FHlHIsSEfUske9cUNBMMMl5AB8y7Lx7nIQHd6mqnmvDLV9vVP76oD0al84afFr033H/QNODnzyxGjZUnj52az/M/1kzQbDxkdE7LduqZSqaa+xYApKudFXE5n1LDMiDVX1XPz3csD+KcUr+RYaY/Pecytgz5KClN9fhYPww6rhkUS/yBjV2lkWPvBH7WXmaQup4JzCvxV1rHPqb/VdRo0ow9QJ44aI9SDua846NaCS4PgcfFjVJlaAGh3MjZSN+Q==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Remittance Tracker_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Remittance Tracker_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./Remittance Tracker_files/ScriptResource(1).axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="./Remittance Tracker_files/ScriptResource(2).axd" type="text/javascript"></script>
+<script src="./Remittance Tracker_files/ScriptResource(3).axd" type="text/javascript"></script>
+<script src="./Remittance Tracker_files/ScriptResource(4).axd" type="text/javascript"></script>
+<script src="./Remittance Tracker_files/ScriptResource(5).axd" type="text/javascript"></script>
+<script src="./Remittance Tracker_files/ScriptResource(6).axd" type="text/javascript"></script>
+<script src="./Remittance Tracker_files/ScriptResource(7).axd" type="text/javascript"></script>
+<script src="./Remittance Tracker_files/ScriptResource(8).axd" type="text/javascript"></script>
+<script src="./Remittance Tracker_files/ScriptResource(9).axd" type="text/javascript"></script>
+<script src="./Remittance Tracker_files/ScriptResource(10).axd" type="text/javascript"></script>
+<script src="./Remittance Tracker_files/ScriptResource(11).axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F0C7EF03">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="tYA88kKamHR5d0HA/yJpOYPKlL8CmKXBhPAio7QkBfeGsoL1VVO11SjQZS/SbvKf7+3s7h6DBU4jEjnVaD3t7Vu89elQSmlaYxlX+brsQNJhY88s+vJQ6V9j6J3+3Gu3jcZGozOMhtIyReB2v3GWGE6hAiNb7AI34mGeMMaSZhTupbvJT3PRmvVM0rMkKlAwsCXzAKBpp55ZzRS0Q6YI292Ni6lDjLLGYGZ6/z2dazRXaqL0u3aS911Hx/ZUp4Sj4YN9YNLdQYO6bVqz8fdry2C1VsaF+6rnC5VoMyFocbosNo/tq6K5Uq7jy9FqaRk8SV/TSWuhJ9kQO/VtBZnufUI+3XOjJ4esHAbnWkNit6pqCQJU4lnFg2xyznvwycuHFGVh8r9fZHdZjIr7">
+</div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$Scriptmanager1', 'form1', ['tctl00$ContentPlaceHolder1$LoginControl1$PopupDialogControl1$popupUpdatePanel','ContentPlaceHolder1_LoginControl1_PopupDialogControl1_popupUpdatePanel','tctl00$PopupDialogControl1$popupUpdatePanel','PopupDialogControl1_popupUpdatePanel'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    <div>
+        <div id="main">
+            <div id="header">
+                <div class="navbar navbar-default navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="https://www.cebuanalhuillier.com/">
+                                <img src="./Remittance Tracker_files/cebuana1.png"></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    <span id="trackertitle" class="trackertitle" onclick="trackertitle_Click" causesvalidation="false" enabled="false">Remittance Tracker<span style="font-size: x-small">v1.0</span></span>
+                                    <span class="sr-only">(current)</span></li>
+                            </ul>
+                           
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-3 col-sm-3 text-center ">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 text-center">
+                        <h3 id="h3" class="text-left">
+                            <i class="fa fa-exchange fa-rotate-45"></i>&nbsp; Remittance Tracker</h3>
+                        <div id="logincontent">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-xs-12 section text-left">
+            
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5 col-xs-5 text-right">
+            Reference Number:
+        </div>
+        <div class="col-md-7 col-xs-7 text-left">
+            <input name="ctl00$ContentPlaceHolder1$LoginControl1$usernameTextBox" type="text" id="ContentPlaceHolder1_LoginControl1_usernameTextBox" class="input" placeholder="" autocomplete="off">
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5 col-xs-5 text-right">
+            Amount:
+        </div>
+        <div class="col-md-7 col-xs-7 text-left">
+            <input name="ctl00$ContentPlaceHolder1$LoginControl1$passwordTextBox" type="text" id="ContentPlaceHolder1_LoginControl1_passwordTextBox" class="input ui-widget-content ui-corner-all" placeholder="" aria-haspopup="true" role="textbox">
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5 col-xs-5 text-right">
+            Captcha Code
+        </div>
+        <div class="col-md-7 col-xs-7 text-left">
+            <div id="ContentPlaceHolder1_LoginControl1_imagePanel">
+	
+                <input name="ctl00$ContentPlaceHolder1$LoginControl1$txtCaptcha" type="text" id="ContentPlaceHolder1_LoginControl1_txtCaptcha" title="Capcha" class="input" placeholder="Captcha Code" autocomplete="off">
+            <span id="ContentPlaceHolder1_LoginControl1_RequiredFieldValidator3" class="validator" style="display:none;">Captcha Code is required.</span>
+            
+</div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-md-5 col-xs-5 text-right">
+               Code
+
+            </div>
+            <div class="col-md-7 col-xs-7 text-left">
+                <img id="ContentPlaceHolder1_LoginControl1_Image1" src="./Remittance Tracker_files/captcha.ashx" style="border: 1px solid #ccc;">
+                
+            </div>
+            <!-- /input-group -->
+        </div>
+
+         <div class="row">
+            <div class="col-md-5 col-xs-5 text-right">
+            </div>
+            <div class="col-md-7 col-xs-7 text-left">
+                    <a id="ContentPlaceHolder1_LoginControl1_LinkButton1" class="Reset" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$LoginControl1$LinkButton1&#39;,&#39;&#39;)">Click here to change code</a>
+            </div>
+            <!-- /input-group -->
+        </div>
+
+
+        <div id="bottom" style="
+    padding: 20px;">
+        <div class="row">
+            
+            <div class="col-md-12">
+                <input type="submit" name="ctl00$ContentPlaceHolder1$LoginControl1$loginButton" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$LoginControl1$loginButton&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ContentPlaceHolder1_LoginControl1_loginButton" class="buttonUI">
+                <!-- /input-group -->
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-6 text-left"> </div>
+            <div class="col-md-6 col-xs-6 text-right"> </div>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- /input-group -->
+
+
+<script type="text/javascript">
+    this.ProgressModalPopupExtenderClientID = 'ContentPlaceHolder1_LoginControl1_PopupDialogControl1_progressModalPopupExtender';
+    this.ProgressMessageLabelClientID = 'ContentPlaceHolder1_LoginControl1_PopupDialogControl1_progressMessageLabel';
+    this.ConfirmModalPopupExtenderClientID = 'ContentPlaceHolder1_LoginControl1_PopupDialogControl1_confirmModalPopupExtender';
+    this.ConfirmMessageLabelClientID = 'ContentPlaceHolder1_LoginControl1_PopupDialogControl1_confirmMessageLabel';
+    this.AlertModalPopupExtenderClientID = 'ContentPlaceHolder1_LoginControl1_PopupDialogControl1_alertModalPopupExtender';
+    this.AlertMessageLabelClientID = 'ContentPlaceHolder1_LoginControl1_PopupDialogControl1_alertMessageLabel';
+//    this.MessageIDLabelClientID =  messageIDLabel.ClientID;
+//    this.LogIDLabelClientID = logIDLabel.ClientID %>';
+//    this.MessageSourceLabelClientID = messageSourceLabel.ClientID ;
+</script>
+
+<div id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_popupUpdatePanel">
+	
+        <div id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_progressPopupPanel" class="popuppanel" style="display: none; position: fixed; z-index: 100001;">
+		
+            <div id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_progressHeaderPanel" class="popupheaderpanel">
+			
+            
+		</div>
+            <div id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_progressContentPanel" class="popupcontentpanel">
+			
+                <div class="minimumwidth">
+                </div>
+                <span id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_progressMessageLabel">Request in process, please wait...</span>
+            
+		</div>
+        
+	</div>
+        
+        <div id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_confirmPopupPanel" class="popuppanel" style="display: none; position: fixed; z-index: 100001;">
+		
+            <div id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_confirmHeaderPanel" class="confirmheaderpanel">
+			
+                Confirmation
+		</div>
+            <div id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_confirmContentOuterPanel">
+			
+                <center>
+                    <div id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_confirmContentPanel" class="popupcontentpanel">
+				
+                        <span id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_confirmMessageLabel">Label</span>
+                    
+			</div>
+                    <table>
+                        <tbody><tr>
+                            <td>
+                                <input type="submit" name="ctl00$ContentPlaceHolder1$LoginControl1$PopupDialogControl1$confirmYesButton" value="Yes" id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_confirmYesButton" class="button button3"></td>
+                            <td>
+                                <input type="submit" name="ctl00$ContentPlaceHolder1$LoginControl1$PopupDialogControl1$confirmNoButton" value="No" id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_confirmNoButton" class="button button3"></td>
+                        </tr>
+                    </tbody></table>
+                </center>
+            
+		</div>
+        
+	</div>
+        
+        <div id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_alertPopupPanel" class="popuppanel collapsibledetails" style="display: none; position: fixed; z-index: 100001;">
+		
+            <div id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_alertHeaderPanel" class="alertheaderpanel">
+			
+                Message
+		</div>
+            <div id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_alertContentOuterPanel">
+			
+                <center>
+                    <div id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_alertContentPanel" class="alertcontentpanel" style="overflow:auto;">
+				
+                        <span id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_alertMessageLabel">Label</span>
+                    
+			</div>
+                    <input type="submit" name="ctl00$ContentPlaceHolder1$LoginControl1$PopupDialogControl1$alertOKButton" value="OK" id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_alertOKButton" class="button button3">
+                </center>
+            
+		</div>
+
+        
+	</div>
+        
+      
+    
+<div id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_progressModalPopupExtender_backgroundElement" class="modalbackground" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div><div id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_confirmModalPopupExtender_backgroundElement" class="modalbackground" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div><div id="ContentPlaceHolder1_LoginControl1_PopupDialogControl1_alertModalPopupExtender_backgroundElement" class="modalbackground" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div></div>
+
+  
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-3  col-sm-3 text-center">
+                    </div>
+                </div>
+                <div id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 text-center">
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <a href="https://www.cebuanalhuillier.com/" class="brand">
+                                    <img src="./Remittance Tracker_files/CebuanaLhuillierHorizontalReverse.png" alt="logo"></a>
+                                <p style="font-size: 11px;">
+                                    Copyright 2015. All Rights Reserved.<br>
+                                    
+                                    
+                                </p>
+                            </div>
+                            <div class="col-md-3 text-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+<script type="text/javascript">
+    this.ProgressModalPopupExtenderClientID = 'PopupDialogControl1_progressModalPopupExtender';
+    this.ProgressMessageLabelClientID = 'PopupDialogControl1_progressMessageLabel';
+    this.ConfirmModalPopupExtenderClientID = 'PopupDialogControl1_confirmModalPopupExtender';
+    this.ConfirmMessageLabelClientID = 'PopupDialogControl1_confirmMessageLabel';
+    this.AlertModalPopupExtenderClientID = 'PopupDialogControl1_alertModalPopupExtender';
+    this.AlertMessageLabelClientID = 'PopupDialogControl1_alertMessageLabel';
+//    this.MessageIDLabelClientID =  messageIDLabel.ClientID;
+//    this.LogIDLabelClientID = logIDLabel.ClientID %>';
+//    this.MessageSourceLabelClientID = messageSourceLabel.ClientID ;
+</script>
+
+<div id="PopupDialogControl1_popupUpdatePanel">
+	
+        <div id="PopupDialogControl1_progressPopupPanel" class="popuppanel" style="display: none; position: fixed; z-index: 100001;">
+		
+            <div id="PopupDialogControl1_progressHeaderPanel" class="popupheaderpanel">
+			
+            
+		</div>
+            <div id="PopupDialogControl1_progressContentPanel" class="popupcontentpanel">
+			
+                <div class="minimumwidth">
+                </div>
+                <span id="PopupDialogControl1_progressMessageLabel">Request in process, please wait...</span>
+            
+		</div>
+        
+	</div>
+        
+        <div id="PopupDialogControl1_confirmPopupPanel" class="popuppanel" style="display: none; position: fixed; z-index: 100001;">
+		
+            <div id="PopupDialogControl1_confirmHeaderPanel" class="confirmheaderpanel">
+			
+                Confirmation
+		</div>
+            <div id="PopupDialogControl1_confirmContentOuterPanel">
+			
+                <center>
+                    <div id="PopupDialogControl1_confirmContentPanel" class="popupcontentpanel">
+				
+                        <span id="PopupDialogControl1_confirmMessageLabel">Label</span>
+                    
+			</div>
+                    <table>
+                        <tbody><tr>
+                            <td>
+                                <input type="submit" name="ctl00$PopupDialogControl1$confirmYesButton" value="Yes" id="PopupDialogControl1_confirmYesButton" class="button button3"></td>
+                            <td>
+                                <input type="submit" name="ctl00$PopupDialogControl1$confirmNoButton" value="No" id="PopupDialogControl1_confirmNoButton" class="button button3"></td>
+                        </tr>
+                    </tbody></table>
+                </center>
+            
+		</div>
+        
+	</div>
+        
+        <div id="PopupDialogControl1_alertPopupPanel" class="popuppanel collapsibledetails" style="display: none; position: fixed; z-index: 100001;">
+		
+            <div id="PopupDialogControl1_alertHeaderPanel" class="alertheaderpanel">
+			
+                Message
+		</div>
+            <div id="PopupDialogControl1_alertContentOuterPanel">
+			
+                <center>
+                    <div id="PopupDialogControl1_alertContentPanel" class="alertcontentpanel" style="overflow:auto;">
+				
+                        <span id="PopupDialogControl1_alertMessageLabel">Label</span>
+                    
+			</div>
+                    <input type="submit" name="ctl00$PopupDialogControl1$alertOKButton" value="OK" id="PopupDialogControl1_alertOKButton" class="button button3">
+                </center>
+            
+		</div>
+
+        
+	</div>
+        
+      
+    
+<div id="PopupDialogControl1_progressModalPopupExtender_backgroundElement" class="modalbackground" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div><div id="PopupDialogControl1_confirmModalPopupExtender_backgroundElement" class="modalbackground" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div><div id="PopupDialogControl1_alertModalPopupExtender_backgroundElement" class="modalbackground" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div></div>
+
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ContentPlaceHolder1_LoginControl1_RequiredFieldValidator1"), document.getElementById("ContentPlaceHolder1_LoginControl1_RequiredFieldValidator2"), document.getElementById("ContentPlaceHolder1_LoginControl1_RequiredFieldValidator3"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ContentPlaceHolder1_LoginControl1_RequiredFieldValidator1 = document.all ? document.all["ContentPlaceHolder1_LoginControl1_RequiredFieldValidator1"] : document.getElementById("ContentPlaceHolder1_LoginControl1_RequiredFieldValidator1");
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator1.controltovalidate = "ContentPlaceHolder1_LoginControl1_usernameTextBox";
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator1.focusOnError = "t";
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator1.errormessage = "Email Address is required.";
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator1.display = "Dynamic";
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator1.initialvalue = "";
+var ContentPlaceHolder1_LoginControl1_RequiredFieldValidator2 = document.all ? document.all["ContentPlaceHolder1_LoginControl1_RequiredFieldValidator2"] : document.getElementById("ContentPlaceHolder1_LoginControl1_RequiredFieldValidator2");
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator2.controltovalidate = "ContentPlaceHolder1_LoginControl1_passwordTextBox";
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator2.errormessage = "Password is required.";
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator2.display = "Dynamic";
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator2.initialvalue = "";
+var ContentPlaceHolder1_LoginControl1_RequiredFieldValidator3 = document.all ? document.all["ContentPlaceHolder1_LoginControl1_RequiredFieldValidator3"] : document.getElementById("ContentPlaceHolder1_LoginControl1_RequiredFieldValidator3");
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator3.controltovalidate = "ContentPlaceHolder1_LoginControl1_txtCaptcha";
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator3.focusOnError = "t";
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator3.errormessage = "Captcha Code is required.";
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator3.display = "Dynamic";
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ContentPlaceHolder1_LoginControl1_RequiredFieldValidator3.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('ContentPlaceHolder1_LoginControl1_RequiredFieldValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_LoginControl1_RequiredFieldValidator1'));
+}
+
+document.getElementById('ContentPlaceHolder1_LoginControl1_RequiredFieldValidator2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_LoginControl1_RequiredFieldValidator2'));
+}
+
+document.getElementById('ContentPlaceHolder1_LoginControl1_RequiredFieldValidator3').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('ContentPlaceHolder1_LoginControl1_RequiredFieldValidator3'));
+}
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalbackground","PopupControlID":"ContentPlaceHolder1_LoginControl1_PopupDialogControl1_progressPopupPanel","PopupDragHandleControlID":"ContentPlaceHolder1_LoginControl1_PopupDialogControl1_progressHeaderPanel","dynamicServicePath":"/LoginPage.aspx","id":"ContentPlaceHolder1_LoginControl1_PopupDialogControl1_progressModalPopupExtender"}, null, null, $get("ContentPlaceHolder1_LoginControl1_PopupDialogControl1_progressPopupPanel"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalbackground","CancelControlID":"ContentPlaceHolder1_LoginControl1_PopupDialogControl1_confirmNoButton","OkControlID":"ContentPlaceHolder1_LoginControl1_PopupDialogControl1_confirmYesButton","OnCancelScript":"OnCancel();","OnOkScript":"OnOK();","PopupControlID":"ContentPlaceHolder1_LoginControl1_PopupDialogControl1_confirmPopupPanel","PopupDragHandleControlID":"ContentPlaceHolder1_LoginControl1_PopupDialogControl1_confirmHeaderPanel","dynamicServicePath":"/LoginPage.aspx","id":"ContentPlaceHolder1_LoginControl1_PopupDialogControl1_confirmModalPopupExtender"}, null, null, $get("ContentPlaceHolder1_LoginControl1_PopupDialogControl1_confirmPopupPanel"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalbackground","OkControlID":"ContentPlaceHolder1_LoginControl1_PopupDialogControl1_alertOKButton","OnOkScript":"OnOKAlert();","PopupControlID":"ContentPlaceHolder1_LoginControl1_PopupDialogControl1_alertPopupPanel","PopupDragHandleControlID":"ContentPlaceHolder1_LoginControl1_PopupDialogControl1_alertHeaderPanel","dynamicServicePath":"/LoginPage.aspx","id":"ContentPlaceHolder1_LoginControl1_PopupDialogControl1_alertModalPopupExtender"}, null, null, $get("ContentPlaceHolder1_LoginControl1_PopupDialogControl1_alertPopupPanel"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalbackground","PopupControlID":"PopupDialogControl1_progressPopupPanel","PopupDragHandleControlID":"PopupDialogControl1_progressHeaderPanel","dynamicServicePath":"/LoginPage.aspx","id":"PopupDialogControl1_progressModalPopupExtender"}, null, null, $get("PopupDialogControl1_progressPopupPanel"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalbackground","CancelControlID":"PopupDialogControl1_confirmNoButton","OkControlID":"PopupDialogControl1_confirmYesButton","OnCancelScript":"OnCancel();","OnOkScript":"OnOK();","PopupControlID":"PopupDialogControl1_confirmPopupPanel","PopupDragHandleControlID":"PopupDialogControl1_confirmHeaderPanel","dynamicServicePath":"/LoginPage.aspx","id":"PopupDialogControl1_confirmModalPopupExtender"}, null, null, $get("PopupDialogControl1_confirmPopupPanel"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"modalbackground","OkControlID":"PopupDialogControl1_alertOKButton","OnOkScript":"OnOKAlert();","PopupControlID":"PopupDialogControl1_alertPopupPanel","PopupDragHandleControlID":"PopupDialogControl1_alertHeaderPanel","dynamicServicePath":"/LoginPage.aspx","id":"PopupDialogControl1_alertModalPopupExtender"}, null, null, $get("PopupDialogControl1_alertPopupPanel"));
+});
+//]]>
+</script>
+</form>
+    <script src="./Remittance Tracker_files/bootstrap.min.js.download" type="text/javascript"></script>
+    <!--[if lt IE 9]> <script type="text/javascript" src="public/lib/bootstrap/js/respond.min.js"></script>
+    <script type="text/javascript" src="public/lib/bootstrap/js/html5shiv.min.js"></script>
+    <![endif]-->
+
+
+</body></html>

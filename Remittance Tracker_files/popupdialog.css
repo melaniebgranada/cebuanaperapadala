@@ -1,0 +1,114 @@
+﻿.modalbackground
+{
+	background-color: #959798;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
+
+.alertheaderpanel
+{
+	background: #ffffff url(../images/ExclamationIcon.png) no-repeat 10px center;
+	height: 30px;
+	color: #1276a9;
+	font-weight: bold;
+	padding-top: 8px;
+	padding-left: 40px;
+	font-size: 18px;
+}
+
+.alertcontentpanel
+{
+	color: #000000;
+	background-color: #ffffff;
+	padding: 10px 10px 20px 40px;
+	text-align: left;
+	min-width: 250px;
+	max-width: 600px;
+	max-height: 500px;
+	margin-bottom: 10px;
+}
+
+.showdetailspanel
+{
+	padding: 10px;
+}
+
+.collapsibledetails
+{
+	margin-top: 5px;
+}
+
+.collapsibledetails a
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+.collapsibledetailsimagebutton
+{
+	vertical-align: middle;
+}
+
+.collapsibletitle
+{
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 10px;
+	color: #1276a9;
+}
+
+.collapsibledetails a:hover
+{
+	text-decoration: none;
+}
+
+.collapsibledetails ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.collapsibledetails li
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	margin: 10px 10px 10px 40px;
+}
+
+
+.popuppanel
+{
+	background-color: #ffffff;
+	padding: 4px;
+}
+
+.confirmheaderpanel
+{
+	background: #ffffff url(../images/QuestionIcon.png) no-repeat 10px center;
+	height: 25px;
+	color: #1276a9;
+	font-weight: bold;
+	padding-left: 40px;
+	padding-top: 8px;
+	font-size: 18px;
+}
+
+.popupheaderpanel
+{
+	background: #ffffff url(../images/ProgressThrobber.gif) no-repeat 10px center;
+	height: 20px;
+	padding: 5px;
+	color: #1276a9;
+}
+
+.popupcontentpanel
+{
+	color: #000000;
+	background-color: #ffffff;
+	padding: 10px 10px 20px 40px;
+	text-align: left;
+	min-width: 250px;
+	max-width: 600px;
+}

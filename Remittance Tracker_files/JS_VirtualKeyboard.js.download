@@ -1,0 +1,27 @@
+﻿        $(function(){
+                   $('.keyboard').keyboard({
+                      // *** choose layout ***
+                      layout       : 'qwerty',
+                      customLayout : { 'default': ['{accept}'] },
+                      display: { 'bksp' : '<- Backspace' }, 
+                      position     : {
+                        of : null, 
+                        my : 'center top',
+                        at : 'center top',
+                        at2: 'center bottom'
+                         },
+                      lockInput: true,             
+                      autoAccept : 'true',
+                      maxLength : 10,  
+                      visible: function(e, keyboard, el) {
+                        keyboard.$preview[0].select();
+                        }                         
+                  }).addScramble({
+                      byRow         : false,    // randomize by row, otherwise randomize all keys
+				      randomizeOnce : false
+                  })
+		}); 
+
+
+            
+            
